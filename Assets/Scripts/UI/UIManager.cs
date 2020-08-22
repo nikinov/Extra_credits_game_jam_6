@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private HealthBar HappyBar;
+    [SerializeField] private Slider HappyBar;
     [SerializeField] private CanvasGroup BlackPanel;
     [SerializeField] private float BlackPanelShowTransitionTime = .5f;
     // Start is called before the first frame update
     void Start()
     {
         FadeBlackPanelOut();
+        HappyBar.value = 100f;
     }
 
     // Update is called once per frame
@@ -27,7 +28,11 @@ public class UIManager : MonoBehaviour
     {
         LeanTween.alphaCanvas(BlackPanel, 0, BlackPanelShowTransitionTime);
     }
-    public void SettHappyBar()
+    public void SetHappyBar(float BarValue)
+    {
+        HappyBar.value = BarValue;
+    }
+    public void Deth()
     {
 
     }
