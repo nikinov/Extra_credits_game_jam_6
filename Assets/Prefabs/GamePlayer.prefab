@@ -202,15 +202,7 @@ GameObject:
   - component: {fileID: 5110619862756721131}
   - component: {fileID: 5110619862756721128}
   - component: {fileID: 5110619862756721108}
-  - component: {fileID: 5110619862756721130}
-  - component: {fileID: 5110619862756721129}
-  - component: {fileID: -8835517941974468092}
-  - component: {fileID: -1351007736172155413}
-  - component: {fileID: 4092098556151714263}
-  - component: {fileID: -93371787187124156}
   - component: {fileID: 8654356301130875558}
-  - component: {fileID: 7566583144991434118}
-  - component: {fileID: -7480811269800770615}
   m_Layer: 8
   m_Name: GamePlayer
   m_TagString: Player
@@ -262,120 +254,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5110619862756721130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62ffee8d846b0488e92f73baf1b4eb74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  lookSensitivity: 20
-  thrusterForce: 3000
-  JointMode: 0
-  JointSpring: 20
-  JointMaxForse: 40
---- !u!114 &5110619862756721129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2091c28f7fc4d4fc08770407d8190ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 5110619862409136135}
-  cameraRotationLimit: 85
-  joint: {fileID: 0}
-  grounded: 0
---- !u!114 &-8835517941974468092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  serverOnly: 0
-  m_AssetId: 
-  hasSpawned: 0
---- !u!114 &-1351007736172155413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae1b0873fedf4ed081b80947a3d00d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  componentsToDisable:
-  - {fileID: 5110619862756721129}
-  - {fileID: 5110619862756721130}
-  - {fileID: 5110619862409136135}
-  - {fileID: 5110619862409136134}
-  - {fileID: 7566583144991434118}
-  - {fileID: 8090453797570345371}
-  - {fileID: -7480811269800770615}
-  ObjectsToDisable:
-  - {fileID: 0}
-  remoteLayerName: RemotePlayer
-  dontDrawLayerName: DontDraw
-  PlayerGraphics: {fileID: 5110619864114086778}
---- !u!114 &4092098556151714263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
---- !u!114 &-93371787187124156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 734b48bea0b204338958ee3d885e11f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  target: {fileID: 5110619862409136128}
 --- !u!153 &8654356301130875558
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -471,58 +349,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &7566583144991434118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4205f703be58b41fe8ad84d87405a3be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  weaponLayerName: Weapon
-  weapon:
-    name: Pistol
-    damage: 40
-    range: 100
-  weaponGFX: {fileID: 5110619863052512683}
-  cam: {fileID: 5110619862409136135}
-  mask:
-    serializedVersion: 2
-    m_Bits: 512
---- !u!114 &-7480811269800770615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5110619862756721135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b29052c915a864e75bfb594ce6509e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  maxHealth: 100
-  DethWait: 6.85
-  disableOnDeth:
-  - {fileID: 7566583144991434118}
-  - {fileID: 8654356301130875558}
-  - {fileID: 5110619862756721128}
-  - {fileID: 5110619862756721130}
-  - {fileID: 5110619862756721108}
-  enableOnDeth: []
-  enableOnDethObj:
-  - {fileID: 0}
-  disableOnDethObj:
-  - {fileID: 1643090460174590697}
-  DeathcountDown: {fileID: 0}
 --- !u!1 &5110619863052512683
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +408,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8810fb3ec952e49039eeaff5839b15a0, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

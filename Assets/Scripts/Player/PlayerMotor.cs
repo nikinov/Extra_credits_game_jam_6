@@ -18,8 +18,6 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] private ConfigurableJoint joint;
 
     public bool grounded;
-    private Vector3 posCur;
-    private Quaternion rotCur;
 
     private Rigidbody rb;
 
