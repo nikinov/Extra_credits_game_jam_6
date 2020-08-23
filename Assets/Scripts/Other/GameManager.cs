@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public UIManager uiManager;
+    private void Start()
     {
-        
+        StartCoroutine(wait());
     }
-
-    // Update is called once per frame
-    void Update()
+    IEnumerator wait()
     {
-        
+        uiManager.FadeBlackPanelOut(1);
+        yield return new WaitForSeconds(1);
+        uiManager.StartCountDown();
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex));
     }
 }
