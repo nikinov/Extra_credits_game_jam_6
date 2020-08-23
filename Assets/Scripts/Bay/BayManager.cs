@@ -13,7 +13,6 @@ public class BayManager : MonoBehaviour
     private void Start()
     {
         HowHappyIsBay = 100;
-        isGettingHappyLess = false;
     }
     private void Update()
     {

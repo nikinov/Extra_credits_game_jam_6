@@ -29,6 +29,10 @@ public class MainMenuManager : MonoBehaviour
     {
 
     }
+    public void OnPlayer()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
     public void FadeBlackPanelIn(float time = 0)
     {
         if (time == 0)

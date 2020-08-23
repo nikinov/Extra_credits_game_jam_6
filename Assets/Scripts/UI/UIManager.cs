@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private float CountDownSpeed = 1f;
     [SerializeField] private GameObject DethPanelUI;
     [SerializeField] private GameObject FinishPanelUI;
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private TextMeshProUGUI TimerUI;
+    public GameObject Bay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +27,16 @@ public class UIManager : MonoBehaviour
         }
         DethPanelUI.GetComponent<CanvasGroup>().alpha = 0;
         FinishPanelUI.GetComponent<CanvasGroup>().alpha = 0;
+        TimerUI.gameObject.GetComponent<CanvasGroup>().alpha = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(gameManager.TimerMultiplyer == 1)
+        {
+            TimerUI.text = (Mathf.Round(gameManager.Timer * 10) / 10).ToString();
+        }
     }
     public void FadeBlackPanelIn(float time = 0)
     {
@@ -62,12 +71,15 @@ public class UIManager : MonoBehaviour
     public void Deth()
     {
         Debug.Log("The player failed");
-        LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
+        LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .5f);
+        gameManager.TimerMultiplyer = 0;
+        gameManager.Timer = gameManager.TimerLength;
+        gameManager.DisablePlayer();
     }
     public void LevelFinished()
     {
         Debug.Log("The player finished the level");
-        LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
+        LeanTween.alphaCanvas(FinishPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
     }
     IEnumerator waitForImageCountDown(float WaitingTime, Image[] image)
     {
@@ -83,6 +95,8 @@ public class UIManager : MonoBehaviour
         image[3].gameObject.SetActive(true);
         yield return new WaitForSeconds(WaitingTime);
         image[3].gameObject.SetActive(false);
-        HappyBar.gameObject.GetComponent<BayManager>().isGettingHappyLess = true;
+        gameManager.EnablePlayer();
+        TimerUI.gameObject.GetComponent<CanvasGroup>().alpha = 1;
+        gameManager.startTimer = true;
     }
 }
