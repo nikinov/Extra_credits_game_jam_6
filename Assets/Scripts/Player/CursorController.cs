@@ -20,6 +20,11 @@ public class CursorController : MonoBehaviour
     private bool isGrabbed = false;
     private Rigidbody grabbedObj;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
 
@@ -42,12 +47,11 @@ public class CursorController : MonoBehaviour
             }
         }
 
-
+        CheckIfInteractable();
     }
 
     private void FixedUpdate()
     {
-        CheckIfInteractable();
         if (isGrabbed)
         {
             grabbedObj.MovePosition(Vector3.Lerp(grabbedObj.transform.position, holdingPlace.position, Time.deltaTime * 25));

@@ -75,6 +75,8 @@ public class UIManager : MonoBehaviour
     }
     public void Deth()
     {
+        Cursor.lockState = CursorLockMode.None;
+
         DethPanelUI.SetActive(true);
         Debug.Log("The player failed");
         LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .5f);
@@ -84,6 +86,8 @@ public class UIManager : MonoBehaviour
     }
     public void LevelFinished()
     {
+        Cursor.lockState = CursorLockMode.None;
+        
         FinishPanelUI.SetActive(true);
         Debug.Log("The player finished the level");
         LeanTween.alphaCanvas(FinishPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
