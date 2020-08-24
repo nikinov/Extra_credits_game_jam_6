@@ -3,27 +3,7 @@ guid: 38b4d96a8d7e54645900aa54f96c74bc
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bed
-    second: {fileID: 2100000, guid: 8a6f42dfab53d0440b48c4412f5d1835, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 1fffb0e3ff76bdb49a9aaad8a5677c41, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: book cover.001
-    second: {fileID: 2100000, guid: 7dfe996cf83c9cd4dafc14bd35a96ee2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: stacked paper.001
-    second: {fileID: 2100000, guid: 1bb4e7051ab464f4fb57850cec6c2c12, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
