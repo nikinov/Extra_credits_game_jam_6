@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BayManager : MonoBehaviour
 {
@@ -8,12 +9,18 @@ public class BayManager : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private UIManager uIManager;
     [SerializeField] private float HowFastWillBayHappynesGoDown = .1f;
+    [SerializeField] private GameObject WrongToyText;
+    [SerializeField] private Sprite[] ExistingToyTypeImages;
     public bool isGettingHappyLess;
     private int NeededTypeOfToy;
+    public Image ImageForToyTypeInUse;
 
     private void Start()
     {
         HowHappyIsBay = 100;
+        WrongToyText.SetActive(false);
+        NeededTypeOfToy = 0;
+        ImageForToyTypeInUse.sprite = ExistingToyTypeImages[NeededTypeOfToy];
     }
     private void Update()
     {
@@ -44,10 +51,11 @@ public class BayManager : MonoBehaviour
                 gameManager.Player.GetComponent<CursorController>().DropItem();
                 AddOrTakeBayHappiness(collision.gameObject.GetComponent<Toy>().HowMuchDoesToyGiveHappiness());
                 Destroy(collision.gameObject);
+                changeToyTypeWanted();
             }
             else
             {
-                Debug.Log("you gave me the wrong toy, beeeee");
+                StartCoroutine(wait());
             }
         }
     }
@@ -57,5 +65,18 @@ public class BayManager : MonoBehaviour
         {
             HowHappyIsBay += AddorSubtractNum;
         }
+    }
+    private void changeToyTypeWanted()
+    {
+        int myRandomIndex;
+        myRandomIndex = Random.Range(0, ExistingToyTypeImages.Length);
+        ImageForToyTypeInUse.sprite = ExistingToyTypeImages[myRandomIndex];
+        NeededTypeOfToy = myRandomIndex;
+    }
+    IEnumerator wait()
+    {
+        WrongToyText.SetActive(true);
+        yield return new WaitForSeconds(.7f);
+        WrongToyText.SetActive(false);
     }
 }
