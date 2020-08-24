@@ -80,7 +80,7 @@ public class CursorController : MonoBehaviour
                     {
                         PickUpItem(hitInfo.collider.gameObject.GetComponent<Rigidbody>());
                     }
-                    else if (isGrabbed && Input.GetKeyUp(interactKey))
+                    else if (isGrabbed && Input.GetKeyDown(interactKey))
                     {
                         DropItem();
                     }
@@ -137,7 +137,7 @@ public class CursorController : MonoBehaviour
 
         }
     }
-    private void DropItem()
+    public void DropItem()
     {
         isGrabbed = false;
         if (grabbedObj != null)

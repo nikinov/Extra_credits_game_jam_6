@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public UIManager uiManager;
-    [SerializeField] private GameObject Player;
+    public GameObject Player;
     public float TimerLength = 30;
     public float Timer;
     public float TimerMultiplyer = 0;

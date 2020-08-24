@@ -35,6 +35,7 @@ public class MainMenuManager : MonoBehaviour
     }
     public void FadeBlackPanelIn(float time = 0)
     {
+        BlackPanel.gameObject.SetActive(true);
         if (time == 0)
         {
             LeanTween.alphaCanvas(BlackPanel, 1, BlackPanelShowTransitionTime);
@@ -46,13 +47,15 @@ public class MainMenuManager : MonoBehaviour
     }
     public void FadeBlackPanelOut(float time = 0)
     {
-        if (time == 0)
+        if (time <= 0)
         {
             LeanTween.alphaCanvas(BlackPanel, 0, BlackPanelShowTransitionTime);
+            StartCoroutine(waitB(BlackPanelShowTransitionTime));
         }
         else
         {
             LeanTween.alphaCanvas(BlackPanel, 0, time);
+            StartCoroutine(waitB(time));
         }
     }
     public void StartTheGame()
@@ -76,5 +79,10 @@ public class MainMenuManager : MonoBehaviour
         Destroy(existingText[0]);
         existingText.Remove(existingText[0]);
         StartCoroutine(wait2());
+    }
+    IEnumerator waitB(float tim)
+    {
+        yield return new WaitForSeconds(tim);
+        BlackPanel.gameObject.SetActive(false);
     }
 }

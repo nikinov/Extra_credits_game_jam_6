@@ -38,6 +38,7 @@ public class BayManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Toys")
         {
+            gameManager.Player.GetComponent<CursorController>().DropItem();
             AddOrTakeBayHappiness(collision.gameObject.GetComponent<Toy>().HowMuchDoesToyGiveHappiness());
             Destroy(collision.gameObject);
         }

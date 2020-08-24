@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DethPanelUI.SetActive(false);
+        FinishPanelUI.SetActive(false);
         HappyBar.value = 100f;
         foreach (Image image in CountDownImages)
         {
@@ -40,6 +42,7 @@ public class UIManager : MonoBehaviour
     }
     public void FadeBlackPanelIn(float time = 0)
     {
+        BlackPanel.gameObject.SetActive(true);
         if (time == 0)
         {
             LeanTween.alphaCanvas(BlackPanel, 1, BlackPanelShowTransitionTime);
@@ -51,13 +54,15 @@ public class UIManager : MonoBehaviour
     }
     public void FadeBlackPanelOut(float time = 0)
     {
-        if (time == 0)
+        if (time <= 0)
         {
             LeanTween.alphaCanvas(BlackPanel, 0, BlackPanelShowTransitionTime);
+            StartCoroutine(waitB(BlackPanelShowTransitionTime));
         }
         else
         {
             LeanTween.alphaCanvas(BlackPanel, 0, time);
+            StartCoroutine(waitB(time));
         }
     }
     public void SetHappyBar(float BarValue)
@@ -70,6 +75,7 @@ public class UIManager : MonoBehaviour
     }
     public void Deth()
     {
+        DethPanelUI.SetActive(true);
         Debug.Log("The player failed");
         LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .5f);
         gameManager.TimerMultiplyer = 0;
@@ -78,6 +84,7 @@ public class UIManager : MonoBehaviour
     }
     public void LevelFinished()
     {
+        FinishPanelUI.SetActive(true);
         Debug.Log("The player finished the level");
         LeanTween.alphaCanvas(FinishPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
     }
@@ -98,5 +105,10 @@ public class UIManager : MonoBehaviour
         gameManager.EnablePlayer();
         TimerUI.gameObject.GetComponent<CanvasGroup>().alpha = 1;
         gameManager.startTimer = true;
+    }
+    IEnumerator waitB(float tim)
+    {
+        yield return new WaitForSeconds(tim);
+        BlackPanel.gameObject.SetActive(false);
     }
 }
