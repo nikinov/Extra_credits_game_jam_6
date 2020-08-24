@@ -9,6 +9,7 @@ public class BayManager : MonoBehaviour
     [SerializeField] private UIManager uIManager;
     [SerializeField] private float HowFastWillBayHappynesGoDown = .1f;
     public bool isGettingHappyLess;
+    public string NeededTypeOfToy = "Battery";
 
     private void Start()
     {
@@ -38,9 +39,16 @@ public class BayManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Toys")
         {
-            gameManager.Player.GetComponent<CursorController>().DropItem();
-            AddOrTakeBayHappiness(collision.gameObject.GetComponent<Toy>().HowMuchDoesToyGiveHappiness());
-            Destroy(collision.gameObject);
+            if (collision.gameObject.GetComponent<Toy>().WhatToyTypeIsThis() == NeededTypeOfToy)
+            {
+                gameManager.Player.GetComponent<CursorController>().DropItem();
+                AddOrTakeBayHappiness(collision.gameObject.GetComponent<Toy>().HowMuchDoesToyGiveHappiness());
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                Debug.Log("you gave me the wrong toy, beeeee");
+            }
         }
     }
     public void AddOrTakeBayHappiness(float AddorSubtractNum)

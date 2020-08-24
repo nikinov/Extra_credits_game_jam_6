@@ -523,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &259167836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,6 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 20
+  ToyType: Battery
 --- !u!1 &331382498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1174,7 @@ MonoBehaviour:
   uIManager: {fileID: 1231244369}
   HowFastWillBayHappynesGoDown: 6
   isGettingHappyLess: 0
+  NeededTypeOfToy: Battery
 --- !u!1 &499616609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,6 +2085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &829684531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2221,6 +2225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &836623900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2444,6 +2449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1090304710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,6 +2772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1148446101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3160,6 +3167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1258552785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,6 +3490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 20
+  ToyType: Battery
 --- !u!114 &1443257235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,6 +3630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1508248772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3760,6 +3770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1534207937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4380,6 +4391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 20
+  ToyType: Battery
 --- !u!114 &1777681799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4519,6 +4531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 20
+  ToyType: Battery
 --- !u!114 &1789037047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4944,6 +4957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &1880118340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5178,6 +5192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Rench
 --- !u!114 &1983852768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5238,7 +5253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5477a4f0ea03c4190bc9a55f05a9e689, type: 2}
+  - {fileID: 2100000, guid: b3b535d21e60e4c30be62e44ee34941d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5405,6 +5420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountOfHappiness: 50
+  ToyType: Battery
 --- !u!114 &2078620073
 MonoBehaviour:
   m_ObjectHideFlags: 0
