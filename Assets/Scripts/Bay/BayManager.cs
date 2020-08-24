@@ -9,7 +9,7 @@ public class BayManager : MonoBehaviour
     [SerializeField] private UIManager uIManager;
     [SerializeField] private float HowFastWillBayHappynesGoDown = .1f;
     public bool isGettingHappyLess;
-    public string NeededTypeOfToy = "Battery";
+    private int NeededTypeOfToy;
 
     private void Start()
     {

@@ -5,12 +5,12 @@ using UnityEngine;
 public class Toy : MonoBehaviour
 {
     [SerializeField] private float AmountOfHappiness = 20f;
-    [SerializeField] private string ToyType = "Battery";
+    [SerializeField] private int ToyType = 0;
     public float HowMuchDoesToyGiveHappiness()
     {
         return AmountOfHappiness;
     }
-    public string WhatToyTypeIsThis()
+    public int WhatToyTypeIsThis()
     {
         return ToyType;
     }
