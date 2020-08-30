@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMotor))]
-[RequireComponent(typeof(ConfigurableJoint))]
+// [RequireComponent(typeof(ConfigurableJoint))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
@@ -16,12 +16,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float JointMaxForse = 40f;
 
     private PlayerMotor motor;
-    private ConfigurableJoint joint;
+    // private ConfigurableJoint joint;
 
     private void Start()
     {
         motor = GetComponent<PlayerMotor>();
-        joint = GetComponent<ConfigurableJoint>();
+        // joint = GetComponent<ConfigurableJoint>();
         SetJointSettings(JointSpring);
     }
     private void Update()
@@ -74,6 +74,6 @@ public class PlayerController : MonoBehaviour
 
     private void SetJointSettings (float _JointSpring)
     {
-        joint.yDrive = new JointDrive { mode = JointMode, positionSpring = _JointSpring, maximumForce = JointMaxForse};
+        //joint.yDrive = new JointDrive { mode = JointMode, positionSpring = _JointSpring, maximumForce = JointMaxForse};
     }
 }
