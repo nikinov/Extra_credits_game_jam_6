@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InteractiveBox : InteractiveObj
+namespace InteractiveObjects
 {
-    public InteractiveBox()
+    public class InteractiveBox : InteractiveObj
     {
-        isGrabbable = true;
-    }
+        public InteractiveBox()
+        {
+            IsGrabbable = true;
+        }
 
-    public override void Interac()
-    {
-        Debug.Log("Take me home! Country Roads!");
+        public override void Interact()
+        {
+            Debug.Log("Take me home! Country Roads!");
+        }
     }
 }

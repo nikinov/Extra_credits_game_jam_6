@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87eb4fca-67db-433e-a0b9-cf6d66a60ffd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingPunch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingPunch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/baby.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/baby.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay/BayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Baby/BabyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay/BayManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveObj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/TextMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/TextMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMotor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMotor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Toys/Toy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Toys/Toy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/clipText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/clipText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/flashing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/flashing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Baby/BabyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveObj.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/TextMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharController/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hBzvLmtBGiTaMPtNnhVVbfSNMV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87eb4fca-67db-433e-a0b9-cf6d66a60ffd" name="Default Changelist" comment="" />
+      <created>1599499505166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599499505166</updated>
+      <workItem from="1599499515528" duration="2551000" />
+      <workItem from="1599546348965" duration="1664000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1599499960387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599499960387" />
+  </component>
+</project>
