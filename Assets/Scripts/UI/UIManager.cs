@@ -1,118 +1,121 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Other;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
-public class UIManager : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private Slider HappyBar;
-    [SerializeField] private CanvasGroup BlackPanel;
-    [SerializeField] private Image[] CountDownImages;
-    [SerializeField] private float BlackPanelShowTransitionTime = .5f;
-    [SerializeField] private float CountDownSpeed = 1f;
-    [SerializeField] private GameObject DethPanelUI;
-    [SerializeField] private GameObject FinishPanelUI;
-    [SerializeField] private GameManager gameManager;
-    [SerializeField] private TextMeshProUGUI TimerUI;
-    public GameObject Bay;
+    public class UIManager : MonoBehaviour
+    {
+        [SerializeField] private Slider happyBar;
+        [SerializeField] private CanvasGroup blackPanel;
+        [SerializeField] private Image[] countDownImages;
+        [SerializeField] private float blackPanelShowTransitionTime = .5f;
+        [SerializeField] private float countDownSpeed = 1f;
+        [SerializeField] private GameObject dethPanelUI;
+        [SerializeField] private GameObject finishPanelUI;
+        [SerializeField] private GameManager gameManager;
+        [SerializeField] private TextMeshProUGUI timerUI;
+        public GameObject baby;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        DethPanelUI.SetActive(false);
-        FinishPanelUI.SetActive(false);
-        HappyBar.value = 100f;
-        foreach (Image image in CountDownImages)
+        // Start is called before the first frame update
+        void Start()
         {
-            image.gameObject.SetActive(false);
+            dethPanelUI.SetActive(false);
+            finishPanelUI.SetActive(false);
+            happyBar.value = 100f;
+            foreach (Image image in countDownImages)
+            {
+                image.gameObject.SetActive(false);
+            }
+            dethPanelUI.GetComponent<CanvasGroup>().alpha = 0;
+            finishPanelUI.GetComponent<CanvasGroup>().alpha = 0;
+            timerUI.gameObject.GetComponent<CanvasGroup>().alpha = 0;
         }
-        DethPanelUI.GetComponent<CanvasGroup>().alpha = 0;
-        FinishPanelUI.GetComponent<CanvasGroup>().alpha = 0;
-        TimerUI.gameObject.GetComponent<CanvasGroup>().alpha = 0;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(gameManager.TimerMultiplyer == 1)
+        // Update is called once per frame
+        void Update()
         {
-            TimerUI.text = (Mathf.Round(gameManager.Timer * 10) / 10).ToString();
+            if(gameManager.timerMultiplier == 1)
+            {
+                timerUI.text = (Mathf.Round(gameManager.timer * 10) / 10).ToString();
+            }
         }
-    }
-    public void FadeBlackPanelIn(float time = 0)
-    {
-        BlackPanel.gameObject.SetActive(true);
-        if (time == 0)
+        public void FadeBlackPanelIn(float time = 0)
         {
-            LeanTween.alphaCanvas(BlackPanel, 1, BlackPanelShowTransitionTime);
+            blackPanel.gameObject.SetActive(true);
+            if (time == 0)
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 1, blackPanelShowTransitionTime);
+            }
+            else
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 1, time);
+            }
         }
-        else
+        public void FadeBlackPanelOut(float time = 0)
         {
-            LeanTween.alphaCanvas(BlackPanel, 1, time);
+            if (time <= 0)
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 0, blackPanelShowTransitionTime);
+                StartCoroutine(waitB(blackPanelShowTransitionTime));
+            }
+            else
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 0, time);
+                StartCoroutine(waitB(time));
+            }
         }
-    }
-    public void FadeBlackPanelOut(float time = 0)
-    {
-        if (time <= 0)
+        public void SetHappyBar(float barValue)
         {
-            LeanTween.alphaCanvas(BlackPanel, 0, BlackPanelShowTransitionTime);
-            StartCoroutine(waitB(BlackPanelShowTransitionTime));
+            happyBar.value = barValue;
         }
-        else
+        public void StartCountDown()
         {
-            LeanTween.alphaCanvas(BlackPanel, 0, time);
-            StartCoroutine(waitB(time));
+            StartCoroutine(WaitForImageCountDown(countDownSpeed, countDownImages));
         }
-    }
-    public void SetHappyBar(float BarValue)
-    {
-        HappyBar.value = BarValue;
-    }
-    public void StartCountDown()
-    {
-        StartCoroutine(waitForImageCountDown(CountDownSpeed, CountDownImages));
-    }
-    public void Deth()
-    {
-        Cursor.lockState = CursorLockMode.None;
+        public void Death()
+        {
+            Cursor.lockState = CursorLockMode.None;
 
-        DethPanelUI.SetActive(true);
-        Debug.Log("The player failed");
-        LeanTween.alphaCanvas(DethPanelUI.GetComponent<CanvasGroup>(), 1, .5f);
-        gameManager.TimerMultiplyer = 0;
-        gameManager.Timer = gameManager.TimerLength;
-        gameManager.DisablePlayer();
-    }
-    public void LevelFinished()
-    {
-        Cursor.lockState = CursorLockMode.None;
+            dethPanelUI.SetActive(true);
+            Debug.Log("The player failed");
+            LeanTween.Framework.LeanTween.alphaCanvas(dethPanelUI.GetComponent<CanvasGroup>(), 1, .5f);
+            gameManager.timerMultiplier = 0;
+            gameManager.timer = gameManager.timerLength;
+            gameManager.DisablePlayer();
+        }
+        public void LevelFinished()
+        {
+            Cursor.lockState = CursorLockMode.None;
         
-        FinishPanelUI.SetActive(true);
-        Debug.Log("The player finished the level");
-        LeanTween.alphaCanvas(FinishPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
-    }
-    IEnumerator waitForImageCountDown(float WaitingTime, Image[] image)
-    {
-        image[0].gameObject.SetActive(true);
-        yield return new WaitForSeconds(WaitingTime);
-        image[0].gameObject.SetActive(false);
-        image[1].gameObject.SetActive(true);
-        yield return new WaitForSeconds(WaitingTime);
-        image[1].gameObject.SetActive(false);
-        image[2].gameObject.SetActive(true);
-        yield return new WaitForSeconds(WaitingTime);
-        image[2].gameObject.SetActive(false);
-        image[3].gameObject.SetActive(true);
-        yield return new WaitForSeconds(WaitingTime);
-        image[3].gameObject.SetActive(false);
-        gameManager.EnablePlayer();
-        TimerUI.gameObject.GetComponent<CanvasGroup>().alpha = 1;
-        gameManager.startTimer = true;
-    }
-    IEnumerator waitB(float tim)
-    {
-        yield return new WaitForSeconds(tim);
-        BlackPanel.gameObject.SetActive(false);
+            finishPanelUI.SetActive(true);
+            Debug.Log("The player finished the level");
+            LeanTween.Framework.LeanTween.alphaCanvas(finishPanelUI.GetComponent<CanvasGroup>(), 1, .25f);
+        }
+        IEnumerator WaitForImageCountDown(float waitingTime, Image[] image)
+        {
+            image[0].gameObject.SetActive(true);
+            yield return new WaitForSeconds(waitingTime);
+            image[0].gameObject.SetActive(false);
+            image[1].gameObject.SetActive(true);
+            yield return new WaitForSeconds(waitingTime);
+            image[1].gameObject.SetActive(false);
+            image[2].gameObject.SetActive(true);
+            yield return new WaitForSeconds(waitingTime);
+            image[2].gameObject.SetActive(false);
+            image[3].gameObject.SetActive(true);
+            yield return new WaitForSeconds(waitingTime);
+            image[3].gameObject.SetActive(false);
+            gameManager.EnablePlayer();
+            timerUI.gameObject.GetComponent<CanvasGroup>().alpha = 1;
+            gameManager.startTimer = true;
+        }
+        IEnumerator waitB(float tim)
+        {
+            yield return new WaitForSeconds(tim);
+            blackPanel.gameObject.SetActive(false);
+        }
     }
 }

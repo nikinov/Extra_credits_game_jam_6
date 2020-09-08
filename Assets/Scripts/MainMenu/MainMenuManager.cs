@@ -1,88 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
 
-public class MainMenuManager : MonoBehaviour
+namespace MainMenu
 {
-    [SerializeField] private CanvasGroup BlackPanel;
-    [SerializeField] private float BlackPanelShowTransitionTime = 1f;
-    [SerializeField] private GameObject MovingNewsText;
-    [SerializeField] private GameObject BackgroundMovingNewsText;
-    [SerializeField] private float MovingNewsTextSpeed = 100;
-    private GameObject go;
-    private List<GameObject> existingText = new List<GameObject>();
-    // Start is called before the first frame update
-    void Start()
+    public class MainMenuManager : MonoBehaviour
     {
-        FadeBlackPanelOut();
-        go = Instantiate(MovingNewsText, BackgroundMovingNewsText.transform);
-        go.GetComponent<TextMove>().textSpeed = MovingNewsTextSpeed;
-        existingText.Add(go);
-        StartCoroutine(wait());
-    }
+        [SerializeField] private CanvasGroup blackPanel;
+        [SerializeField] private float blackPanelShowTransitionTime = 1f;
+        [SerializeField] private GameObject movingNewsText;
+        [SerializeField] private GameObject backgroundMovingNewsText;
+        [SerializeField] private float movingNewsTextSpeed = 100;
+        private GameObject _go;
+        private readonly List<GameObject> _existingText = new List<GameObject>();
 
-    // Update is called once per frame
-    void Update()
-    {
+        void Start()
+        {
+            FadeBlackPanelOut();
+            _go = Instantiate(movingNewsText, backgroundMovingNewsText.transform);
+            _go.GetComponent<TextMove>().textSpeed = movingNewsTextSpeed;
+            _existingText.Add(_go);
+            StartCoroutine(Wait());
+        }
 
-    }
-    public void OnPlayer()
-    {
-        SceneManager.LoadScene(sceneBuildIndex: 1);
-    }
-    public void FadeBlackPanelIn(float time = 0)
-    {
-        BlackPanel.gameObject.SetActive(true);
-        if (time == 0)
+        public void OnPlayer()
         {
-            LeanTween.alphaCanvas(BlackPanel, 1, BlackPanelShowTransitionTime);
+            SceneManager.LoadScene(sceneBuildIndex: 1);
         }
-        else
+        public void FadeBlackPanelIn(float time = 0)
         {
-            LeanTween.alphaCanvas(BlackPanel, 1, time);
+            blackPanel.gameObject.SetActive(true);
+            LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 1, time == 0 ? blackPanelShowTransitionTime : time);
         }
-    }
-    public void FadeBlackPanelOut(float time = 0)
-    {
-        if (time <= 0)
+        public void FadeBlackPanelOut(float time = 0)
         {
-            LeanTween.alphaCanvas(BlackPanel, 0, BlackPanelShowTransitionTime);
-            StartCoroutine(waitB(BlackPanelShowTransitionTime));
+            if (time <= 0)
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 0, blackPanelShowTransitionTime);
+                StartCoroutine(WaitB(blackPanelShowTransitionTime));
+            }
+            else
+            {
+                LeanTween.Framework.LeanTween.alphaCanvas(blackPanel, 0, time);
+                StartCoroutine(WaitB(time));
+            }
         }
-        else
+        public void StartTheGame()
         {
-            LeanTween.alphaCanvas(BlackPanel, 0, time);
-            StartCoroutine(waitB(time));
-        }
-    }
-    public void StartTheGame()
-    {
 
-    }
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds((go.GetComponent<RectTransform>().rect.width*2.1f) / MovingNewsTextSpeed);
-        go = Instantiate(MovingNewsText, BackgroundMovingNewsText.transform);
-        go.GetComponent<TextMove>().textSpeed = MovingNewsTextSpeed;
-        existingText.Add(go);
-        StartCoroutine(wait2());
-    }
-    IEnumerator wait2()
-    {
-        yield return new WaitForSeconds((go.GetComponent<RectTransform>().rect.width * 2.2f) / MovingNewsTextSpeed);
-        go = Instantiate(MovingNewsText, BackgroundMovingNewsText.transform);
-        go.GetComponent<TextMove>().textSpeed = MovingNewsTextSpeed;
-        existingText.Add(go);
-        Destroy(existingText[0]);
-        existingText.Remove(existingText[0]);
-        StartCoroutine(wait2());
-    }
-    IEnumerator waitB(float tim)
-    {
-        yield return new WaitForSeconds(tim);
-        BlackPanel.gameObject.SetActive(false);
+        }
+        IEnumerator Wait()
+        {
+            yield return new WaitForSeconds((_go.GetComponent<RectTransform>().rect.width*2.1f) / movingNewsTextSpeed);
+            _go = Instantiate(movingNewsText, backgroundMovingNewsText.transform);
+            _go.GetComponent<TextMove>().textSpeed = movingNewsTextSpeed;
+            _existingText.Add(_go);
+            StartCoroutine(Wait2());
+        }
+        IEnumerator Wait2()
+        {
+            yield return new WaitForSeconds((_go.GetComponent<RectTransform>().rect.width * 2.2f) / movingNewsTextSpeed);
+            _go = Instantiate(movingNewsText, backgroundMovingNewsText.transform);
+            _go.GetComponent<TextMove>().textSpeed = movingNewsTextSpeed;
+            _existingText.Add(_go);
+            Destroy(_existingText[0]);
+            _existingText.Remove(_existingText[0]);
+            StartCoroutine(Wait2());
+        }
+        IEnumerator WaitB(float time)
+        {
+            yield return new WaitForSeconds(time);
+            blackPanel.gameObject.SetActive(false);
+        }
     }
 }

@@ -1,18 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InteractiveObj : MonoBehaviour
+namespace InteractiveObjects
 {
-    public bool isGrabbable { get; protected set; }
-
-    public InteractiveObj()
+    public class InteractiveObj : MonoBehaviour
     {
-        isGrabbable = true;
-    }
+        public bool IsGrabbable { get; protected set; }
 
-    public virtual void Interac()
-    {
+        public InteractiveObj()
+        {
+            IsGrabbable = true;
+        }
 
+        public virtual void Interact()
+        {
+
+        }
     }
 }

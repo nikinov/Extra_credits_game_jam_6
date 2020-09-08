@@ -1,23 +1,24 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(CanvasGroup))]
-public class flashing : MonoBehaviour
+namespace UI
 {
-    private CanvasGroup thistext;
-    private void Start()
+    [RequireComponent(typeof(CanvasGroup))]
+    public class flashing : MonoBehaviour
     {
-        thistext = gameObject.GetComponent<CanvasGroup>();
-        StartCoroutine(wait());
-    }
-    IEnumerator wait()
-    {
-        LeanTween.alphaCanvas(thistext, .2f, 1);
-        yield return new WaitForSeconds(1);
-        LeanTween.alphaCanvas(thistext, .8f, 1);
-        yield return new WaitForSeconds(1);
-        StartCoroutine(wait());
+        private CanvasGroup thistext;
+        private void Start()
+        {
+            thistext = gameObject.GetComponent<CanvasGroup>();
+            StartCoroutine(wait());
+        }
+        IEnumerator wait()
+        {
+            LeanTween.Framework.LeanTween.alphaCanvas(thistext, .2f, 1);
+            yield return new WaitForSeconds(1);
+            LeanTween.Framework.LeanTween.alphaCanvas(thistext, .8f, 1);
+            yield return new WaitForSeconds(1);
+            StartCoroutine(wait());
+        }
     }
 }

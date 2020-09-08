@@ -1,17 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Toy : MonoBehaviour
+namespace Toys
 {
-    [SerializeField] private float AmountOfHappiness = 20f;
-    [SerializeField] private int ToyType = 0;
-    public float HowMuchDoesToyGiveHappiness()
+    public class Toy : MonoBehaviour
     {
-        return AmountOfHappiness;
-    }
-    public int WhatToyTypeIsThis()
-    {
-        return ToyType;
+        [SerializeField] private float AmountOfHappiness = 20f;
+        [SerializeField] private int ToyType = 0;
+        public float HowMuchDoesToyGiveHappiness()
+        {
+            return AmountOfHappiness;
+        }
+        public int WhatToyTypeIsThis()
+        {
+            return ToyType;
+        }
     }
 }

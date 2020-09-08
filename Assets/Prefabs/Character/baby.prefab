@@ -317,19 +317,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 668688260018651290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35f94f12826fe4504be2cbf8579f3fcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 13af6c5f04463334a9d677d0f20ea735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   uIManager: {fileID: 0}
-  HowFastWillBayHappynesGoDown: 0
+  HowFastWillBayHappynesGoDown: 0.1
   WrongToyText: {fileID: 0}
-  ExistingToyTypeImages:
-  - {fileID: 21300000, guid: c932ff8a008744999b17379dd9a1e010, type: 3}
-  - {fileID: 21300000, guid: fff792c34eb3d45e8ab8725b785b7b47, type: 3}
-  - {fileID: 21300000, guid: c875a7e0c7f134ed58af05e369945097, type: 3}
-  - {fileID: 21300000, guid: c1eaa364aad474f0eb505ba033fc4563, type: 3}
-  - {fileID: 21300000, guid: 0287aeec461194171b5446d284600ed6, type: 3}
+  ExistingToyTypeImages: []
   isGettingHappyLess: 0
   ImageForToyTypeInUse: {fileID: 0}
 --- !u!82 &668688260018651264
