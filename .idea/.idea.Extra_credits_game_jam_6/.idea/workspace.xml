@@ -20,75 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87eb4fca-67db-433e-a0b9-cf6d66a60ffd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingPunch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingPunch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/Following.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/LogoCinematic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/PathSplines.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Examples/Scripts/TestingZLegacyExt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTDescrOptional.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LTSeq.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanSmooth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTween.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LeanTween/Framework/LeanTweenExt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character/baby.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/baby.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Extra_credits_game_jam_6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Logo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Logo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay/BayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Baby/BabyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bay/BayManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveObj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractiveObjects/InteractiveObj.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/TextMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/TextMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/HealthBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/CameraController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CharacterController/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMotor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMotor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Toys/Toy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Toys/Toy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/clipText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/clipText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/flashing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/flashing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +52,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CursorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/CharController/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" />
       </list>
     </option>
   </component>
@@ -162,6 +99,7 @@
       <updated>1599499505166</updated>
       <workItem from="1599499515528" duration="2551000" />
       <workItem from="1599546348965" duration="1664000" />
+      <workItem from="1601255811460" duration="5843000" />
     </task>
     <servers />
   </component>
